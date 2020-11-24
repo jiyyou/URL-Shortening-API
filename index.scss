@@ -1,3 +1,17 @@
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$grayviolet: hsl(257, 7%, 63%);
+$darkblue: hsl(255, 11%, 22%);
+$darkviolet2: hsl(260, 8%, 14%);
+
+@mixin desktop {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+
 * {
 	list-style-type: none;
 	text-decoration: none;
@@ -9,4 +23,50 @@ html {
 }
 *, *:after, *:before {
 	box-sizing: inherit;
+}
+#nav1 {
+	border-bottom: 1px solid grey;
+}
+.header {
+	padding: 1.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	&__navbox {
+		display: none;
+		&--active {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+			background-color: $darkviolet;
+		}
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem 0;
+		align-items: center;
+		justify-content: space-around;
+	}
+	&__link {
+		width: 100%;
+		border-radius: 50px;
+		color: white;
+		margin:	0.5rem 0;
+	}
+	&__dropdown {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		border: none;
+		width: 27px;
+		height: 25px;
+		background-color: white;
+	}
+	&__buttondesign {
+		width: 100%;
+		background-color: $gray;
+		height: 3px;
+		border-radius: 50px;
+	}
 }

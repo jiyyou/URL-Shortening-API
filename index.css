@@ -3,6 +3,7 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 html {
@@ -21,6 +22,7 @@ html {
   padding: 1.5rem 1rem;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .header__navbox {
   display: none;
@@ -59,6 +61,115 @@ html {
   background-color: #bfbfbf;
   height: 3px;
   border-radius: 50px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__image {
+  width: 100%;
+  position: relative;
+  right: -40px;
+  top: 0;
+}
+.hero__title {
+  text-align: center;
+}
+.hero__description {
+  text-align: center;
+}
+.hero__button {
+  background-color: #2acfcf;
+  width: 180px;
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+
+.main {
+  position: relative;
+  padding: 1rem;
+  background-color: #bfbfbf;
+}
+.main__form {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #3b3054;
+  background-image: url("./images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.main__input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.main__button {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2acfcf;
+  color: white;
+}
+.descriptioncard {
+  position: relative;
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.descriptioncard__iconbox {
+  background-color: #3b3054;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boost {
+  background-color: #3b3054;
+  background-image: url("./images/bg-boost-mobile.svg");
+  padding: 4rem 2rem;
+}
+.boost__title {
+  color: white;
+  margin-bottom: 2rem;
+}
+.boost__button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #2acfcf;
+  color: white;
+  border-radius: 50px;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #232127;
+}
+
+.infocard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.infocard__title {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.infocard__link {
+  margin-top: 1rem;
+  color: #bfbfbf;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -10,6 +10,7 @@ const shortenLink = () => {
 			.then(res => {
 				let shortenedLink = res.data.result.full_short_link;
 				let listItem = document.createElement('LI');
+				listItem.classList.add('card');
 				let originalLink = document.createElement('P');
 				originalLink.innerText = `${linkInput}`;
 				originalLink.classList.add('card__initialurl')

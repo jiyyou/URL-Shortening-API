@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 
-*, *:after, *:before {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -120,6 +120,30 @@ html {
   background-color: #2acfcf;
   color: white;
 }
+.card {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.card__initialurl {
+  border-bottom: 1px solid grey;
+  padding: 0.5rem;
+  width: 100%;
+}
+.card__outputurl {
+  padding: 0.5rem;
+  width: 100%;
+  color: #2acfcf;
+}
+.card__button {
+  margin: 0.5rem;
+  width: 100%;
+  border: none;
+  background-color: #2acfcf;
+  color: white;
+}
+
 .descriptioncard {
   position: relative;
   background-color: white;

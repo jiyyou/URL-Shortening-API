@@ -22,7 +22,7 @@ $darkviolet2: hsl(260, 8%, 14%);
 html {
 	box-sizing: border-box;
 }
-*, *:after, *:before {
+*, *:before, *:after {
 	box-sizing: inherit;
 }
 #nav1 {
@@ -112,6 +112,7 @@ html {
 		background-image: url('./images/bg-shorten-mobile.svg');
 		background-repeat: no-repeat;
 		background-position: right;
+		
 	}
 	&__input {
 		width: 100%;
@@ -140,6 +141,31 @@ html {
 	}
 	&__descriptionlist {
 
+	}
+}
+
+.card {
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	margin-bottom: 1rem;
+	&__initialurl {
+		border-bottom: 1px solid grey;
+		padding: 0.5rem;
+		width: 100%;
+		
+	}
+	&__outputurl {
+		padding: 0.5rem;
+		width: 100%;
+		color: $cyan;
+	}
+	&__button {
+		margin: 0.5rem;
+		width: 100%;
+		border: none;
+		background-color: $cyan;
+		color: white;
 	}
 }
 
